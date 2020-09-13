@@ -15,3 +15,10 @@ output "api_resource_id" {
   description = "resource id of resource created in api"
   value       = module.demo_resource.resourceId
 }
+
+output "http_method_type" {
+  description = "http method used api gateway method http method type."
+  value       = module.method_demo.http_method_type
+}
+
+

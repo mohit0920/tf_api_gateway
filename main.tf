@@ -20,3 +20,19 @@ module "demo_resource" {
   parent_id = module.api_module.parent_id
   pathp     = "test"
 }
+
+module "method_demo" {
+  source = "./modules/method-demo"
+
+  api_id           = module.api_module.api_id
+  resourceId       = module.demo_resource.resourceId
+  http_method_type = "GET"
+  auth_required    = "NONE"
+}
+
+module "integration_demo" {
+  source = "./modules/integration-demo"
+ 
+  api_id = module.api_module.api_id
+  resourceId = module.demo_resource.resourceId
+}
