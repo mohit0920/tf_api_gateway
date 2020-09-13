@@ -17,3 +17,13 @@ variable "integration_type" {
   type        = string
   default     = "MOCK"
 }
+
+variable "stage" {
+  description = "stage name of deployement like  test"
+  type        = string
+  default     = "test"
+}
+variable "vars" {
+  type = map(string)
+  default = {"answer" = "12"}
+}

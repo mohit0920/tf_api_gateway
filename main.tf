@@ -30,9 +30,10 @@ module "method_demo" {
   auth_required    = "NONE"
 }
 
-module "integration_demo" {
+module "integration_deploy_demo" {
   source = "./modules/integration-demo"
  
   api_id = module.api_module.api_id
   resourceId = module.demo_resource.resourceId
 }
+
