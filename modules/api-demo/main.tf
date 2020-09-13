@@ -3,3 +3,4 @@ resource "aws_api_gateway_rest_api" "api_module" {
   description = "REST api created from module"
   tags        = var.tags
 }
+

@@ -13,3 +13,10 @@ module "api_module"  {
   } 
 }
 
+module "demo_resource" {
+  source = "./modules/resource-demo"
+  
+  api_id    = module.api_module.api_id
+  parent_id = module.api_module.parent_id
+  pathp     = "test"
+}

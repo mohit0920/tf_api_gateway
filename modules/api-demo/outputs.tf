@@ -10,3 +10,4 @@ output "api_arn" {
   description = "ARN of api created"
   value       = aws_api_gateway_rest_api.api_module.arn
 }
+
